@@ -11,7 +11,10 @@
         sum=0
         i=0
     2.논리(반복 while)
-        while i<=100
+        while i<=100:
+        i+=1
+        if i%num!=0 :
+            continue
     3.결과 출력
 '''
 
@@ -21,4 +24,8 @@ i=0
 
 while i<=100: #선택 조건
     i+=1
-    if
+    if i%num!=0:
+        continue
+    sum+=i
+
+print("1부터 100까지 {}의 배수의 합은 : {}".format(num,sum))
